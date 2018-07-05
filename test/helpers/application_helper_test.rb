@@ -1,8 +1,6 @@
-require 'test_helper'
+ENV['RAILS_ENV'] ||= 'test'
 
 class ApplicationHelperTest < ActionView::TestCase
-  test "full title helper" do
-    assert_equal full_title,         FILL_IN
-    assert_equal full_title("Help"), FILL_IN
-  end
+  fixtures :all
+  include ApplicationHelper
 end
